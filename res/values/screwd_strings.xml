@@ -49,5 +49,10 @@
     <string name="menu_add_to_blacklist">Add to blacklist</string>
     <!-- Description for incoming calls that were blacklisted -->
     <string name="toast_added_to_blacklist">%s added to blacklist.</string>
+    
+    <!-- Call recording -->
+    <string name="start_call_playback">Play recording</string>
+    <string name="stop_call_playback">Stop</string>
+    <string name="call_playback_error_message">Failed to play recording</string> 
 
 </resources>
