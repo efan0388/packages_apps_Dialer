@@ -36,6 +36,7 @@ LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dirs)) \
     $(support_library_root_dir)/v7/recyclerview/res \
     $(support_library_root_dir)/v7/appcompat/res \
     $(support_library_root_dir)/design/res
+LOCAL_ASSET_DIR += $(LOCAL_PATH)/assets
 
 LOCAL_AAPT_FLAGS := \
     --auto-add-overlay \
@@ -46,6 +47,8 @@ LOCAL_AAPT_FLAGS := \
     --extra-packages com.android.incallui \
     --extra-packages com.android.contacts.common \
     --extra-packages com.android.phone.common
+
+LOCAL_JAVA_LIBRARIES := org.apache.http.legacy
 
 LOCAL_STATIC_JAVA_LIBRARIES := \
     android-common \
