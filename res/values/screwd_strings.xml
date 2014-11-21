@@ -45,6 +45,7 @@
     <string name="incall_vibrate_45_summary">Vibrates at the 45 second mark of every minute during outgoing calls</string>
     
     <!-- Description for incoming calls that were blacklisted -->
+    <string name="type_blacklist">Blacklisted call</string>
     <string name="menu_add_to_blacklist">Add to blacklist</string>
     <!-- Description for incoming calls that were blacklisted -->
     <string name="toast_added_to_blacklist">%s added to blacklist.</string>
