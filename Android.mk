@@ -40,6 +40,8 @@ LOCAL_STATIC_JAVA_LIBRARIES := \
     libphonenumber \
     libgeocoding
 
+LOCAL_AAPT_INCLUDE_ALL_RESOURCES := true
+
 LOCAL_REQUIRED_MODULES := libvariablespeed
 
 LOCAL_PACKAGE_NAME := Dialer
