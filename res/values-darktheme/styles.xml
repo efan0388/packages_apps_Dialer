@@ -79,6 +79,7 @@
         <item name="favorites_padding_bottom">?android:attr/actionBarSize</item>
         <item name="android:colorPrimary">@color/dialer_theme_color</item>
         <item name="android:colorPrimaryDark">@color/dialer_theme_color_dark</item>
+        <item name="android:navigationBarColor">@*android:color/material_blue_grey</item>
         <item name="dialpad_key_button_touch_tint">@color/dialer_dialpad_touch_tint</item>
     </style>
     <style name="InCallAnimationStyle" parent="@android:style/Animation.Activity">
