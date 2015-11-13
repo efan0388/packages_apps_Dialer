@@ -25,6 +25,7 @@ import android.os.Message;
 import android.os.Vibrator;
 import android.preference.ListPreference;
 import android.preference.Preference;
+import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
@@ -54,6 +55,9 @@ public class SoundSettingsFragment extends PreferenceFragment
     private static final int HIDE_CARRIER_SETTINGS = 1;
 
     private static final int MSG_UPDATE_RINGTONE_SUMMARY = 1;
+
+    private static final String CATEGORY_INCALL_VIBRATION_KEY =
+            "dialer_general_incall_vibration_category_key";
 
     private Preference mRingtonePreference;
     private SwitchPreference mVibrateWhenRinging;
@@ -104,6 +108,10 @@ public class SoundSettingsFragment extends PreferenceFragment
         } else {
             getPreferenceScreen().removePreference(mVibrateWhenRinging);
             mVibrateWhenRinging = null;
+        }
+
+        if (!hasVibrator()) {
+            getPreferenceScreen().removePreference(findPreference(CATEGORY_INCALL_VIBRATION_KEY));
         }
 
         mPlayDtmfTone.setOnPreferenceChangeListener(this);
