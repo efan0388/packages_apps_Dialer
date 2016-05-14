@@ -14,4 +14,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- In call vibrate options -->
+  <string name="incall_vibration_category_title">Rung động trong cuộc gọi</string>
+  <string name="incall_vibrate_outgoing_title">Rung khi trả lời</string>
+  <string name="vibrate_call_waiting">Rung khi chờ cuộc gọi</string>
+  <string name="incall_vibrate_hangup_title">Rung khi giữ cuộc gọi</string>
+  <string name="incall_vibrate_45_title">Rung mỗi phút</string>
+  <string name="incall_vibrate_45_summary">Điện thoại sẽ rung tại giây thứ 45 của mỗi phút trong khi thực hiện các cuộc gọi đi</string>
 </resources>
